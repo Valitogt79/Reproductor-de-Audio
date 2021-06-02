@@ -13,15 +13,57 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="estilos.css" />
     <title>Reproductor de Música</title>
   </head>
   <body>
     <div class="container">
       <div class="listado-canciones">
         <div class="cancion">
-          <audio src="./audio/19th Floor - Bobby Richards.mp3" controls></audio>
+          <div class="titulo">19th. Floor</div>
+          <div class="play" id="19th_floor">
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="stop">
+            <span class="material-icons">cancel</span>
+          </div>
+          <div class="descargar">
+            <a href="audio/19th_Floor.mp3" download=""
+              ><span class="material-icons">file_download</span></a
+            >
+          </div>
+        </div>
+        <div class="cancion">
+          <div class="titulo">Awful - Josh Pan</div>
+          <div class="play" id="awful">
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="stop">
+            <span class="material-icons">cancel</span>
+          </div>
+          <div class="descargar">
+            <a href="audio/Awful.mp3" download=""
+              ><span class="material-icons">file_download</span></a
+            >
+          </div>
+        </div>
+        <div class="cancion">
+          <div class="titulo">Breatha - Josh Pan</div>
+          <div class="play" id="breatha">
+            <span class="material-icons">play_circle</span>
+          </div>
+          <div class="stop">
+            <span class="material-icons">cancel</span>
+          </div>
+          <div class="descargar">
+            <a href="audio/Breatha.mp3" download=""
+              ><span class="material-icons">file_download</span></a
+            >
+          </div>
         </div>
       </div>
+      <input type="range" max="1" min="0" step="0.1" class="volumen" />
     </div>
+    <script src="codigo.js"></script>
   </body>
 </html>
