@@ -1,5 +1,6 @@
 html {
   font-family: "Poppins", sans-serif;
+  background-color: gray;
 }
 
 .container {
@@ -11,6 +12,10 @@ html {
   justify-content: center;
 }
 
+h1 {
+  text-align: center;
+  padding: 2rem;
+}
 .listado-canciones {
   width: 100%;
 }
@@ -31,4 +36,5 @@ html {
 .stop,
 .descargar {
   flex: 1;
+  color: pink;
 }
